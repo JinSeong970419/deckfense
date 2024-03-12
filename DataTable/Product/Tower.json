@@ -1,0 +1,4 @@
+{"Name":"Warrior","Power":8.0,"Range":2.0,"AttackSpeed":1.5,"Id":"Tower_Warrior"}
+{"Name":"Wizard","Power":15.0,"Range":3.0,"AttackSpeed":2.0,"Id":"Tower_Wizard"}
+{"Name":"Thief","Power":10.0,"Range":2.0,"AttackSpeed":1.2,"Id":"Tower_Thief"}
+

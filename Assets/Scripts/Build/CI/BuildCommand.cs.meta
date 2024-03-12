@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/Build/CI/BuildCommand.cs.meta
+guid: 1f2f0835f0806f4419909909b90ead62
+========
+guid: 410c62f886f6f534eb615ebf4da7f541
+>>>>>>>> develop:Assets/Scripts/Data/SpawnerTable.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

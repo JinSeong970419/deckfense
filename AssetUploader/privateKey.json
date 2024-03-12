@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "deckfense",
+  "private_key_id": "1c544a6dd73dd292dfe3ecb751552d0cf68cdf24",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDzIJy3+LKFp0X3\nR0Fd+WPDfYIS72OSV509oPDDMrYjsl0NZncu6KJk+WvN6yDQFa92mNcHjtyXY26K\nUcZjmRAFJUzbgaKe+SSvMWqUTStVb3IVzMjMGSw8wcJEdCIdeP1l5T3SNah8XjBQ\n5MbRoCoi9Gkr1Tq7a8uF55DRHAa9nyIrI0nBuv4O+aT2K7VCBkcsc5vIJuPoxGCH\nMc5cHfPW5EptvjUFoyIzsmSPVU+UBiTgJANOMznUuWZ05RWMHkPKFHWit+xyPy4j\nNuBWClq+eT7TAyECbTgEYs0BY50FSqbqZJz3dQqHiAv/moZXTVw8WRwLFWQfJi4x\nykaXCl8PAgMBAAECggEAEZn0npqiDTkGwLGahhVbAQXu5JrXu5PqOoVfSNJwC0K+\np9l/zjHIJ/h15iRPbaEhFDxZo1HXBU+M6vVwOZ+uk22XrdopwTAwu4Cfwnky81Ss\nW4jfp9I4UkG4yo0Z0MZrAFuwHEeg/55i1khpxTbyNf7Tal/3VSanRykN++v3TpAf\nOXcbADjxznCwcn76L+QFRsnzeaHv//bSSE3ZnDA+Mfz80atpn10BLlJsijWG7hjA\nj4ADFQ3bwqrfUAerPl6SWaK0PQPLJlzOlKAeit5rAkUJm4HHF39vJ0Fj6BxMZjya\n2LxYEB5r72jGMNh2oDrOTQyjzAuZKZyNr+KBIM3cOQKBgQD9aZ/VL+RtAN6YbyqJ\nCJ5Itj0+vFSva8fm6kOemfHSaQyPcUpbEav+jtFovM0Y/X3dK3Y+xwGZfBNI3Kbq\n8sk/MEPg4Z4oQ2SmTzftAEgrtEvC1NEZZQLzpqPOS7PULwH04KmzRz7oBLrFM49a\nI3y+7Wdp9pM4bBywzYqlGbgx4wKBgQD1nBqohcFDYXkyk/aoWhenuLIPSRqO8gxV\n63CttiMnNiOtuHzeLHS4OLJXOOIV9D/mfCJg5mhvJHBw8MZkBxl59HVDBqi68rdu\nCQ0I6EMfsJ5ujNLfdOtvZY/caOgppgaCKRyKgaSO80BPl0AGMNLy+hMMe/xWbpqN\nASG3hPN15QKBgF6WZFBgtfRx1KQ1Kj1H+DzPuQCHr1xi8JSicGbsszSEfWm1MbnY\nWMiFamibwDpJtAcvx80a3t/5TgFuSud7g96QF2YDENOahCEHhKpz5nxZqcWpRfsi\nlv12/8FqxE641RQgH3eJalOUIFqnKiTNBi0F1AnbPYxb3kGoFs4VUYldAoGAUv3h\noCo6KMuKCYYn5bEzpw/o0vNvzveJJYs98uTFsh1AJxZc0zIQaqN117U36BU1dmth\nrn6MsWmNuQwS7X/covHwoaphX3JeewcB6Y2aCN5EWrSpGKrIV0bpOqAUOuaH8nlz\n1HWEJm2ZwIsqLi1XSpUn1KMcnBQZkyXbv8hj/+UCgYEAj7JwRNqGiVhycOXm6jBI\niccjJURaSfkYQjGxFzdDjyf/1qLXe3FiyoxSM5GvMGERnbxjW+xDW8jOZnYg+RY1\nmVMP9IMOcZHvh/PSwEm+dGrsSET20i16ZK1JFRO8K9pEKrLy93Vp69csZsyF0reV\nO1/y9CVpx1I9Bzh0OToAWV8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "assetuploader@deckfense.iam.gserviceaccount.com",
+  "client_id": "109790030386082086916",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/assetuploader%40deckfense.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

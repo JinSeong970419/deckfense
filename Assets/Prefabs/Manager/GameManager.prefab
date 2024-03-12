@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4738123481913636401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 451700621834303707}
+  - component: {fileID: 5609632276028459745}
+  - component: {fileID: 6878433987523682123}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &451700621834303707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4738123481913636401}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5609632276028459745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4738123481913636401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57887331d8715fd45b24e0ca034cba28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneChangedEvent: {fileID: 11400000, guid: 87066ff009e2da646b65e20e897bba7f, type: 2}
+  inGameTime: {fileID: 11400000, guid: 3e13d1b0d320c754d84ed35ae07acaf3, type: 2}
+  inputReader: {fileID: 11400000, guid: 6952128b26ca82b42ac4116989d70082, type: 2}
+  controlsRemapping: {fileID: 11400000, guid: 3bdd4dbb08676be468f3069ae0e79454, type: 2}
+--- !u!114 &6878433987523682123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4738123481913636401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a726c73947cd66a4ab0b3c4e8be87e6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  api: {fileID: 11400000, guid: 4718d881e4d76934ab2d96082d346099, type: 2}
+  isMulti: 1

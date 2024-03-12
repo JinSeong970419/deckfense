@@ -1,0 +1,10 @@
+{"Name":"Warrior","Cost":1,"Description":"워리어 타워 1기를 소환한다","Spells":[{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Warrior"}],"Id":"Card_Warrior"}
+{"Name":"Wizard","Cost":2,"Description":"","Spells":[{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Wizard"},{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Wizard"},{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Wizard"}],"Id":"Card_Wizard"}
+{"Name":"WarriorTwo","Cost":2,"Description":"워리어를 두기 설치한다","Spells":[{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Warrior"},{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Warrior"}],"Id":"Card_WarriorTwo"}
+{"Name":"Thief","Cost":3,"Description":"","Spells":[{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Thief"}],"Id":"Card_Thief"}
+{"Name":"Temp1","Cost":1,"Description":"임시카드 1 이다","Spells":[{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Thief"}],"Id":"Card_Temp1"}
+{"Name":"Temp2","Cost":2,"Description":"임시카드 2 이다","Spells":[{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Thief"}],"Id":"Card_Temp2"}
+{"Name":"Temp3","Cost":3,"Description":"임시카드 3 이다","Spells":[{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Thief"}],"Id":"Card_Temp3"}
+{"Name":"Temp4","Cost":4,"Description":"임시카드 4 이다","Spells":[{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Thief"}],"Id":"Card_Temp4"}
+{"Name":"Temp5","Cost":10,"Description":"임시카드 5 이다","Spells":[{"SpellId":"Spell_PlaceTower","ParameterId":"PlaceTowerParameter_Thief"}],"Id":"Card_Temp5"}
+

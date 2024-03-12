@@ -1,0 +1,151 @@
+
+
+stages:
+  - begin
+  - prepare
+  - prepare_failure
+  - build_android
+  - build_android_failure
+  - build_windows
+  - build_windows_failure
+  - end
+  - deploy_android
+  - deploy_windows
+
+variables:
+  BUILD_NAME: Deckfense
+  UNITY_ACTIVATION_FILE: ./unity3d.alf
+  UNITY_DIR_WIN: C:/deckfense
+  BUILD_PATH_WIN: $UNITY_DIR_WIN/Build/$CI_COMMIT_SHORT_SHA/Windows
+  BUILD_PATH_ANDROID: $UNITY_DIR_WIN/Build/$CI_COMMIT_SHORT_SHA/Android
+  BUCKET_NAME: deckfense
+  SLACK_CHANNEL: deckfense-build
+  SLACK_MESSAGE: $CI_COMMIT_SHORT_SHA
+
+git:
+  stage: prepare
+  script:
+    - echo $CI_COMMIT_SHORT_SHA
+    - echo "current branch is $CI_COMMIT_BRANCH"
+    - set username
+    - echo $Env:USERNAME
+    - echo $CI_BUILDS_DIR
+    - echo $CI_PROJECT_DIR
+    - git config --global --add safe.directory "$UNITY_DIR_WIN"
+    - git -C "$UNITY_DIR_WIN" status
+#    - git -C "$UNITY_DIR_WIN" checkout .
+    - git -C "$UNITY_DIR_WIN" clean -f
+    - git -C "$UNITY_DIR_WIN" remote -v
+    - git -C "$UNITY_DIR_WIN" remote set-url origin http://gitlab.goblingames.co.kr/deckfense/deckfense.git
+    - git -C "$UNITY_DIR_WIN" remote update
+    - git -C "$UNITY_DIR_WIN" clean -f
+    - git -C "$UNITY_DIR_WIN" checkout .
+    - git -C "$UNITY_DIR_WIN" checkout $CI_COMMIT_BRANCH
+    - git -C "$UNITY_DIR_WIN" clean -f
+    - git -C "$UNITY_DIR_WIN" pull
+  before_script:
+    - CHCP 65001
+  tags:
+    - win
+
+git-failure:
+  stage: prepare_failure
+  script:
+    - C:\CIPipelineHandler\CIPipelineHandler2.exe
+  when: on_failure
+  needs: [git]
+  tags:
+    - win
+
+.win-build: &win-build
+  stage: build_windows
+  script:
+    - C:\deckfense\ci\build_win.cmd
+  artifacts:
+    paths:
+      - $UNITY_DIR_WIN/Build/$CI_COMMIT_SHORT_SHA
+  tags:
+    - win
+
+.win-build-android: &win-build-android
+  stage: build_android
+  script:
+    - C:\deckfense\ci\build_android.cmd
+  artifacts:
+    paths:
+      - $UNITY_DIR_WIN/Build/$CI_COMMIT_SHORT_SHA
+  tags:
+    - win
+
+win-build-windows-mono2x:
+  <<: *win-build
+  variables:
+    BUILD_TARGET: StandaloneWindows64
+    BUILD_APP_BUNDLE: "false"
+    SCRIPTING_BACKEND: Mono2X
+  tags:
+    - win
+
+win-build-android-il2cpp:
+  <<: *win-build-android
+  variables:
+    BUILD_TARGET: Android
+    BUILD_APP_BUNDLE: "false"
+    SCRIPTING_BACKEND: IL2CPP
+  tags:
+    - win
+
+win-build-windows-failure:
+  stage: build_windows_failure
+  script:
+    - C:\CIPipelineHandler\CIPipelineHandler2.exe
+  when: on_failure
+  needs: [win-build-windows-mono2x]
+  tags:
+    - win
+
+win-build-android-failure:
+  stage: build_android_failure
+  script:
+    - C:\CIPipelineHandler\CIPipelineHandler2.exe
+  when: on_failure
+  needs: [win-build-android-il2cpp]
+  tags:
+    - win
+
+win-deploy-windows:
+  stage: deploy_windows
+  script:
+    - C:\deckfense\ci\deploy_win.cmd
+  tags:
+    - win
+
+win-deploy-android:
+  stage: deploy_android
+  script:
+    - C:\deckfense\ci\deploy_android.cmd
+  tags:
+    - win
+
+win-begin:
+  stage: begin
+  script:
+    - C:\CIPipelineHandler\CIPipelineHandler.exe
+  tags:
+    - win
+
+win-end:
+  stage: end
+  script:
+    - C:\CIPipelineHandler\CIPipelineHandler2.exe
+  tags:
+    - win
+
+workflow:
+  rules:
+    - if: $CI_MERGE_REQUEST_ID 
+      when: never
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
+

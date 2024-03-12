@@ -1,0 +1,85 @@
+{
+    "name": "GameControls",
+    "maps": [
+        {
+            "name": "GameAction",
+            "id": "19823dc0-4b4a-4cb6-91f4-c2caa3f0ad73",
+            "actions": [
+                {
+                    "name": "BackQute",
+                    "type": "Button",
+                    "id": "eca0b6e4-8015-41c9-9355-8994e84b9e43",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "EnterAction",
+                    "type": "Button",
+                    "id": "929de90f-7859-4514-84f3-55f436d9b80e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Touch",
+                    "type": "Value",
+                    "id": "f75c623d-18b7-467d-be58-9904754d1b72",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e904b111-7fec-4128-acc2-b0841dd9cc41",
+                    "path": "<Keyboard>/backquote",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BackQute",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "10ca5435-4cc6-445a-8eab-29e2e8af53a3",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnterAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d560d403-3517-4ab8-9af6-a712819b4f22",
+                    "path": "<Keyboard>/numpadEnter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnterAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2979c45d-d727-45df-a4ea-2fe285899261",
+                    "path": "<Touchscreen>/primaryTouch",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
